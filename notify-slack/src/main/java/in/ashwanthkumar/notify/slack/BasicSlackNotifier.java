@@ -1,5 +1,6 @@
-package in.ashwanthkumar.notify;
+package in.ashwanthkumar.notify.slack;
 
+import in.ashwanthkumar.notify.Notifier;
 import in.ashwanthkumar.slack.webhook.Slack;
 import in.ashwanthkumar.slack.webhook.SlackMessage;
 
