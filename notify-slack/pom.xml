@@ -28,6 +28,7 @@
     <name>notify-slack</name>
     <artifactId>notify-slack</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <description>Notify events in your application as messages on Slack</description>
 
     <dependencies>
         <dependency>

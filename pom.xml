@@ -24,6 +24,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>notify</name>
+    <description>Notification wrappers across services for applications in JVM</description>
 
     <modules>
         <module>notify-core</module>
