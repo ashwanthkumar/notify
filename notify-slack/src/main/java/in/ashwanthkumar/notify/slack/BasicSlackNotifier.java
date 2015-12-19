@@ -18,7 +18,7 @@ public class BasicSlackNotifier implements Notifier {
     }
 
     @Override
-    public void error(String message) {
+    public void notify(String message) {
         try {
             client.push(new SlackMessage(message));
         } catch (IOException e) {
@@ -26,12 +26,4 @@ public class BasicSlackNotifier implements Notifier {
         }
     }
 
-    @Override
-    public void info(String message) {
-        try {
-            client.push(new SlackMessage(message));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

@@ -5,16 +5,9 @@ package in.ashwanthkumar.notify;
  */
 public interface Notifier {
     /**
-     * Notify an error message
+     * Notify a message
      *
      * @param message Actual message that needs to be sent
      */
-    void error(String message);
-
-    /**
-     * Notify a info message
-     *
-     * @param message Actual message that needs to be sent
-     */
-    void info(String message);
+    void notify(String message);
 }

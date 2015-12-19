@@ -27,7 +27,7 @@ Add the `notify-core` to your project and choose the required integration.
 
 ```java
 Notifier notifier = new BasicSlackNotifier(new Slack("slack_webhook_url").sendToChannel("general"));
-notifier.info("Hello World from Notify :smile:");
+notifier.notify("Hello World from Notify :smile:");
 ```
 
 ## License
