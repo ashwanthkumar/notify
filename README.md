@@ -4,8 +4,10 @@ Collection of libraries that I used for notification across various means.
 
 Latest Project version - `1.0.0-SNAPSHOT` (published on Sonatype Snapshots)
 
-## Usage
-Add the following to your pom.xml
+## Integrations and Usage
+
+Add the `notify-core` to your project and choose the required integration.
+
 ```xml
 <dependency>
     <groupId>in.ashwanthkumar</groupId>
@@ -14,8 +16,6 @@ Add the following to your pom.xml
 </dependency>
 ```
 
-## Integrations
-
 ### Slack
 ```xml
 <dependency>
@@ -23,6 +23,11 @@ Add the following to your pom.xml
     <artifactId>notify-slack</artifactId>
     <version>${project.version}</version>
 </dependency>
+```
+
+```java
+Notifier notifier = new BasicSlackNotifier(new Slack("slack_webhook_url").sendToChannel("general"));
+notifier.info("Hello World from Notify :smile:");
 ```
 
 ## License
