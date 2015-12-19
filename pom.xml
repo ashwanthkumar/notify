@@ -29,6 +29,7 @@
         <module>notify-core</module>
         <module>notify-slack</module>
         <module>notify-email</module>
+        <module>notify-pagerduty</module>
     </modules>
 
     <properties>

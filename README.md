@@ -44,5 +44,22 @@ Notifier notifier = new SimpleEmailNotifier(new GMailConfig("from@example.com", 
 notifier.notify("Hello World from Notify :smile:");
 ```
 
+### PagerDuty
+Note - As of now, we can only trigger incidents on PagerDuty not resolve them.
+
+```xml
+<dependency>
+    <groupId>in.ashwanthkumar</groupId>
+    <artifactId>notify-pagerduty</artifactId>
+    <version>${project.version}</version>
+</dependency>
+```
+
+```java
+Notifier notifier = new SimplePDNotifier("API_KEY");
+notifier.notify("Hello World from Notify :smile:");
+```
+
+
 ## License
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
