@@ -15,7 +15,8 @@ Add the following to your pom.xml
 ```
 
 ## Integrations
-- Slack
+
+### Slack
 ```xml
 <dependency>
     <groupId>in.ashwanthkumar</groupId>
