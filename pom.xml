@@ -27,6 +27,7 @@
 
     <modules>
         <module>notify-core</module>
+        <module>notify-slack</module>
     </modules>
 
     <properties>
