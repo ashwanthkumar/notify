@@ -71,6 +71,14 @@
         </repository>
     </distributionManagement>
 
+    <developers>
+        <developer>
+            <name>Ashwanth Kumar</name>
+            <email>ashwanthkumar@googlemail.com</email>
+            <url>http://ashwanthkumar.in/</url>
+        </developer>
+    </developers>
+
     <url>https://github.com/ashwanthkumar/notify</url>
     <licenses>
         <license>
@@ -151,9 +159,6 @@
                                 <goals>
                                     <goal>sign</goal>
                                 </goals>
-                                <configuration>
-                                    <passphrase>${gpg.passphrase}</passphrase>
-                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
