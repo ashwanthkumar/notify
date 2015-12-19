@@ -57,6 +57,29 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <url>https://github.com/ashwanthkumar/notify</url>
+    <licenses>
+        <license>
+            <name>Apache2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/ashwanthkumar/notify</url>
+        <connection>scm:git:git@github.com:ashwanthkumar/notify.git</connection>
+    </scm>
+
     <build>
         <plugins>
 
