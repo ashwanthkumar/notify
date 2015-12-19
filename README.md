@@ -30,5 +30,19 @@ Notifier notifier = new BasicSlackNotifier(new Slack("slack_webhook_url").sendTo
 notifier.notify("Hello World from Notify :smile:");
 ```
 
+### EMail
+```xml
+<dependency>
+    <groupId>in.ashwanthkumar</groupId>
+    <artifactId>notify-email</artifactId>
+    <version>${project.version}</version>
+</dependency>
+```
+
+```java
+Notifier notifier = new SimpleEmailNotifier(new GMailConfig("from@example.com", "to@example.com", "Email Subject", "username", "password"));
+notifier.notify("Hello World from Notify :smile:");
+```
+
 ## License
 Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0

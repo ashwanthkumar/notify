@@ -28,6 +28,7 @@
     <modules>
         <module>notify-core</module>
         <module>notify-slack</module>
+        <module>notify-email</module>
     </modules>
 
     <properties>
