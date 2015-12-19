@@ -2,7 +2,7 @@
 
 Collection of libraries that I used for notification across various means.
 
-Latest Project version - `1.0.0-SNAPSHOT` (published on Sonatype Snapshots)
+Latest Project version - `1.0-rc1` (published on Maven Central)
 
 ## Integrations and Usage
 
