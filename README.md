@@ -30,6 +30,22 @@ Notifier notifier = new BasicSlackNotifier(new Slack("slack_webhook_url").sendTo
 notifier.notify("Hello World from Notify :smile:");
 ```
 
+or you can initialize from HOCON configurations
+
+```
+# slack-notify.conf
+notify {
+  type = "slack"
+  webhook-url = "https://hooks.slack.com/services/foo/bar/baz"
+}
+```
+
+```java
+Config config = ConfigFactory.parseResources("slack-notify.conf").getConfig("notify");
+Notifier notifier = SlackNotifierFactory.load(config);
+notifier.notify("Hello World from Notify :smile:");
+```
+
 ### EMail
 ```xml
 <dependency>
