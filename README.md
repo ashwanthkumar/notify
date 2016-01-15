@@ -2,7 +2,7 @@
 
 Collection of libraries that I used for notification across various means.
 
-Latest Project version - `1.0-rc1` (published on Maven Central)
+Latest Project version - `1.0-rc3` (published on Maven Central)
 
 ## Integrations and Usage
 
