@@ -37,6 +37,10 @@ or you can initialize from HOCON configurations
 notify {
   type = "slack"
   webhook-url = "https://hooks.slack.com/services/foo/bar/baz"
+  # Optional fields
+  channel = "general" # or user = "david"
+  botname = "notifier"
+  icon = ":sunglasses:"
 }
 ```
 
